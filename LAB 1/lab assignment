@@ -6,10 +6,6 @@
   <title>My Portfolio</title>
 </head>
 <body>
-  <!-- Accessibility link -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <!-- Header and Navigation -->
   <header>
     <h1>My Portfolio</h1>
     <nav>
@@ -20,20 +16,14 @@
       </ul>
     </nav>
   </header>
-
-  <!-- Hero Section -->
   <section id="hero">
-    <h2>Welcome!</h2>
-    <p>Hello! I'm a passionate web developer who loves building creative and functional websites.</p>
+    <h2>Welcome to my portfolio</h2>
+    <p>Hi everyone, I am a student graduating in Btech CSE specializing Artificial intelligence and Machine learning.</p>
   </section>
-
-  <!-- Main Content -->
   <main id="main-content">
-
-    <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
-      <img src="profile.jpg" alt="Profile picture of [Your Name]" width="150" height="150">
+      <img src="profile.jpg" alt="Profile picture of Kananreet Kaur" width="150" height="150">
       <p>I’m a web developer specializing in front-end technologies and user experience design.</p>
 
       <h3>Technical Skills</h3>
@@ -56,8 +46,6 @@
         </tr>
       </table>
     </section>
-
-    <!-- Projects Section -->
     <section id="projects">
       <h2>My Projects</h2>
 
@@ -75,18 +63,14 @@
 
       <article>
         <h3>Responsive Landing Page</h3>
-        <p>A mobile-friendly landing page created with HTML5 and CSS3.</p>
         <a href="#" target="_blank">View Project</a>
       </article>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
       <h2>Contact Me</h2>
       <form action="#" method="post">
         <div>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <input type="text" id="name" name="name" placeholder="Kananreet Kaur" required>
         </div>
         <div>
           <label for="email">Email:</label>
@@ -94,57 +78,13 @@
         </div>
         <div>
           <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+          <textarea id="message" name="message" rows="4" placeholder="I look forward in exploring Artificial Intelligence and seeing it as an opputunity for new jobs rather than destroying jobs." required></textarea>
         </div>
         <div>
-          <button type="submit">Send Message</button>
+          <button type="submit">Submit</button>
         </div>
       </form>
     </section>
   </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
-    <a href="#hero">Back to top</a>
-  </footer>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 </body>
 </html>
