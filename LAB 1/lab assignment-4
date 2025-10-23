@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <header>
+        <H1>Kananreet Kaur</H1><br><hr>
+        <ul>
+        <li><a href="#About">About</a></li><br>
+        <li><a href="#Projects">Projects</a></li><br>
+        <li><a href="#Contact">Contact</a></li><br>
+        </nav>
+        </ul>
+    </header>
+    <main>
+        <h2>Welcome!</h2><br>
+        <p>Hi Everyone! I am a web development student. This is my personal portfolio website.
+
+        </p><br>
+        <h2 id="About">About Me</h2><br>
+        <img src="./profile picture.jpeg" alt="My profile picture"><br>
+        <p>I am passionate about learning web development and building creative projects</p><br>
+        <h2 id="Projects">My Projects</h2>
+        <section>
+            <dl>
+                <dt>Forms:
+                    <dd>A webpage page which allows user to submit their information or views.</dt>
+                </dt>
+               <dt>Portfolio Website:
+                    <dd>A personal webpage showcasing my bio, skills and projects.</dt>
+                </dt>
+                   <dt>Table Trackdown:
+                    <dd>A web page designed to track your daily habits.</dt>
+                </dt>
+            </dl>
+        </section><br>
+        <h2>Technical Skills</h2><br>
+        <table border="5px">
+            <tr>
+            <th>Skill</th>
+            <th>Level</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Beginner</td>
+            </tr>
+            <tr><td>Python</td>
+                <td>Beginner</td>
+            </tr>
+   
+            <tr>
+                <td>Java</td>
+                <td>Beginner</td>
+            </tr>
+
+        </table><br>
+        <h2 id="Contact">Contact Me</h2><br>
+        <forms>
+            <label for="name">Name:</label>
+            <input type="text" id="name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email"><br>
+            <label for="textbox">Message:</label><br>
+            <textarea id="textbox" rows="3" cols="20" placeholder="Write a message"></textarea><br>
+            <button type="submit">Send</button>
+        </forms>
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <aside></aside>
+    <footer></footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
