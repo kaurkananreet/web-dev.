@@ -1,0 +1,133 @@
+/* Kananreet Kaur
+Student ID: 2501730375
+Section F
+Lab assignment 2
+portfolio page css */
+
+
+.header{
+    background-color:#6BAED6 ;
+    position:static;
+    top:0px;
+    width:auto;
+    height:auto;
+    padding:20px;
+    text-align: center;
+    
+}
+.link{
+    color:antiquewhite;
+    text-decoration: none;
+    padding:5px;
+    box-sizing:border-box;
+    margin:10px;
+}
+main{
+    text-align: center;
+    font-family:'Lora' ;
+    background-color:rgb(255, 255, 255);
+}
+#img{
+    border:2px solid #6BAED6;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+th{
+   background-color: #6BAED6; 
+   color:white;
+   
+}
+.tr{
+    background-color: #C6DBEF;
+    color:white;
+}
+table{
+    align-items: center;
+    border:2px  solid black;
+    padding:5px;
+    margin:0 auto;
+    width:500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);;
+}
+#button{
+    color:white;
+    background-color:#2b99d8;
+    border:1px solid blue;
+    cursor:pointer;
+    transition:background-color 0.3s ease;
+    width:200px;
+
+}
+#button:hover{
+    background-color: blue;
+    transform:translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+
+.aboutme{
+    background-color: #aec9d8;
+    color:white;
+    padding:60px;
+    border:2px solid gray;
+    margin:10px;
+    width:auto;
+    height:auto;
+}
+.projects{
+    color:black;
+    background-color: beige;
+    padding:60px;
+    border:2px solid gray;
+    width:auto;
+    height:auto;
+    margin:10px;
+}
+.technicalskills{
+    color:azure;
+    background-color: rgb(179, 220, 220);
+    border: :2px grey solid;
+    paddingn:60px;
+    margin:10px;
+}
+.contact{
+    color:black;
+    background-color: azure;
+    padding:60px;
+    margin:10px;
+    border: grey solid 2px;
+}
+aside{
+    text-decoration: none;
+    color:white;
+    border:solid 2px gray;
+    padding:5px;
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    background-color: darkcyan;
+}
+footer{
+    text-align: center;
+}
+label{
+    color:darkblue;
+    padding:5px;
+    margin:10px;
+}
+input{
+    padding:5px;
+    margin:10px;
+    background-color: lemonchiffon;
+
+}
+textarea{
+    background-color: rgb(211, 233, 233);
+}
+dt{
+    border: solid 2px gray;
+    padding:10px;
+    width:auto;
+    height:auto;
+    margin:10px;
+}
