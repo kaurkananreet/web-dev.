@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portfolio</title>
+
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --text-dark: #333;
+            --text-light: #555;
+        }
+
+        body {
+            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            background-color: rgb(138, 227, 227);
+        }
+
+        header {
+            background-color:rgb(71, 71, 197);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color:#3b78ba;
+        }
+        #hero {
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        #hero h1 {
+            font-size: 2.5rem;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        #projects {
+            padding: 2rem 1rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .project {
+            padding: 1rem;
+            background: #f7f7f7;
+            border-radius: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            color:blue;
+        }
+        #contact {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 0.4rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #3b78ba;
+        }
+        @media (min-width: 600px) {
+            #hero h1 {
+                font-size: 3rem;
+            }
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .project-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>My Portfolio</h2>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Hello</h1>
+        <h2>I'm a Full Stack Developer</h2>
+        <p>Greetings! I am Kananreet Kaur, a student in K.R. Mangalam University pursuing my degree in B.Tech in Artificial Intelligence and Machne learning(AIML). I am passionate about creating innovative web applications and continuously learning new technologies. I look forward to building creative and innovative projects that make a difference. </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">Project 1</div>
+            <div class="project">Project 2</div>
+            <div class="project">Project 3</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: kaurkananreet@gmail.com</p>
+        <button>Send Message</button>
+    </section>
+
+</body>
+</html>
+
