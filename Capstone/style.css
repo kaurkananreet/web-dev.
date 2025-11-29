@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #1c1c1c;
+}
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #4e8bed;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #0e315e;
+    font-size: 15px;
+}
+.hero {
+    position: relative;
+    height: 800px;
+    background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fdestination&psig=AOvVaw02E0LhiChpEMenHaCXd-2p&ust=1764480088519000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJjtqtnOlpEDFQAAAAAdAAAAABAE) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 102, 255, 0.35);
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    position: relative;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    background: #f082e5;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color:black;
+}
+.destinations-section {
+    padding: 60px;
+    text-align: center;
+}
+
+.destinations-section h2 {
+    font-size: 26px;
+    color: #5997f9;
+    margin-bottom: 30px;
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 12px 0 5px;
+    font-size: 18px;
+}
+.packages-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.packages-section h2 {
+    font-size: 26px;
+    color: #609af7;
+    margin-bottom: 30px;
+}
+
+.packages {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.package-card {
+    width: 260px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.package-card span {
+    color: #f082e5;
+    font-weight: bold;
+    font-size: 18px;
+}
+.stats-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.stat-card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+.stat-card h1 {
+    font-size: 42px;
+    color: #1e73ff;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.stat-card p {
+    font-size: 18px;
+    color: #8c8c8c;
+}
+.subscribe-box {
+    background: #5fa8f7;
+    color: white;
+    padding: 25px;
+    border-radius: 22px;
+    margin-top: 20px;
+}
+
+.subscribe-box h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.subscribe-box p {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+/* EMAIL INPUT */
+.input-field {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.subscribe-btn {
+    width: 55%;
+    background: #ffb239;
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+.contact-box {
+    background: #ffffff;
+    padding: 25px;
+    margin-top: 35px;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.contact-box h2 {
+    font-size: 24px;
+    color: #1e73ff;
+    margin-bottom: 20px;
+}
+.contact-input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 14px;
+    border: 1px solid #e4e4e4;
+    outline: none;
+    margin-bottom: 18px;
+    font-size: 16px;
+    background: #fafafa;
+}
+
+.message-box {
+    height: 120px;
+    resize: none;
+}
+.send-btn {
+    width: 60%;
+    padding: 14px;
+    background: #1e73ff;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.subscribe-btn,
+.send-btn {
+    display: block;
+    margin: 0 auto;
+}
+.footer {
+    background: #1c1c1c;
+    padding: 40px 25px;
+    color: white;
+    position: relative;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.footer-title {
+    color: #f7a844;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+.footer-section a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 12px 0;
+}
