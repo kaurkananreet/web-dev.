@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Event Dashboard</title>
+  <link rel="stylesheet" href="assignment1.css">
+</head>
+<body>
+
+  <h1 class="title"> Smart Event Dashboard</h1>
+
+  <div class="containerno1">
+
+    <div class="box1">
+      <h3>Add New Event</h3>
+
+      <input type="text" id="title" placeholder="Event Title">
+      <input type="date" id="date">
+
+      <select id="category">
+        <option>Conference</option>
+        <option>Workshop</option>
+        <option>Meetup</option>
+      </select>
+
+      <textarea id="description" placeholder="Description"></textarea>
+
+    <button id="addBtn">Add Event</button>
+
+    </div>
+
+    <div class="box2">
+      <h3>My Events</h3>
+
+      <div class="btngroup">
+        <button id="clearBtn">Clear All Events</button>
+        <button id="sampleBtn">Add Sample Events</button>
+      </div>
+
+      <div id="events"></div>
+    </div>
+  </div>
+
+  <div class="box3">
+    <h3>DOM Manipulation Demo</h3>
+    <p id="key">Press any key</p>
+  </div>
+
+  <script src="assignment1.js"></script>
+</body>
+</html>
