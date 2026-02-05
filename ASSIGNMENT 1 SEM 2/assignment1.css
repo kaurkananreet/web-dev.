@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #5fd3d0, #5b86e5);
+  margin: 0;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: rgb(53, 92, 234);
+  font: 50;
+}
+
+.containerno1 {
+  display: flex;
+  gap: 20px;
+}
+
+.box1 {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.box2 {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 1500px;
+
+}
+
+input, select, textarea, button {
+  width: 400px;
+  margin: 6px ;
+  padding: 8px;
+}
+
+button {
+  background: rgb(90, 90, 153);
+  color: white;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.btngroup {
+  display: flex;
+  gap: 10px;
+}
+
+.event {
+  background: rgb(178, 155, 155);
+  padding: 10px;
+
+  margin-top: 10px;
+}
+
+
+
+.remove {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  color: red;
+}
